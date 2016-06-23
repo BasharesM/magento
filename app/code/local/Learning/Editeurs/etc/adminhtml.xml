@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+
+<config>
+    <menu>
+        <learning_editeurs translate="title" module="learning_editeurs">
+            <title>Editeurs</title>
+            <sort_order>70</sort_order>
+            <children>
+                <editeurs_editeur translate="title" module="learning_editeurs">
+                    <title>Gérer les éditeurs</title>
+                    <action>adminhtml/editeurs_editeur</action>
+                    <sort_order>0</sort_order>
+                </editeurs_editeur>
+            </children>
+        </learning_editeurs>
+    </menu>
+    <acl>
+        <resources>
+            <all>
+                <title>Allow Everything</title>
+            </all>
+            <admin>
+                <children>
+                    <learning_editeurs>
+                        <children>
+                            <editeurs_editeur translate="title" module="learning_editeurs">
+                                <title>Gérer les éditeurs</title>
+                                <sort_order>0</sort_order>
+                            </editeurs_editeur>
+                        </children>
+                    </learning_editeurs>
+                </children>
+            </admin>
+        </resources>
+    </acl>
+</config>

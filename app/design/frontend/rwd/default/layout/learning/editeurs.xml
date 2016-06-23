@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<layout version="0.1.0">
+	<learning_editeurs_index_index>
+		<reference name="head">
+            <action method="addJs"><script>learning/jquery/jquery.bxediteurs.js</script></action>
+            <action method="addItem">
+                <type>skin_js</type>
+                <name>learning/js/scripts.js</name>
+            </action>
+            <action method="addItem">
+                <type>skin_css</type>
+                <name>learning/css/style.css</name>
+            </action>
+        </reference>
+		
+    	<reference name="content">
+        	<block type="learning_editeurs/editeurs"  name="learning_editeurs.editeurs" template="learning/editeurs.phtml"/>
+    	</reference>
+	</learning_editeurs_index_index>
+</layout>

@@ -1,0 +1,10 @@
+<?php $editors = $this->getAllEditeurs(); ?>
+<ul class="bxslider">
+
+    <?php foreach ($editors as $editor): ?>
+        <li>
+            <img src="<?php echo Mage::helper('learning_editeurs')->getImageUrl($editor->getImageUrl()); ?>" title="<?php echo $editor->getName(); ?>">
+        </li>
+    <?php endforeach; ?>
+
+</ul>

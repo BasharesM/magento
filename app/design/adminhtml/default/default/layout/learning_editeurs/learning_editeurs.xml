@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+
+<layout>
+
+    <!-- editeurs editeurS -->
+
+    <adminhtml_editeurs_editeur_index>
+        <reference name="content">
+            <block type="learning_editeurs/adminhtml_editeur" name="learning_editeurs_adminhtml_editeur"></block>
+        </reference>
+    </adminhtml_editeurs_editeur_index>
+
+    <adminhtml_editeurs_editeur_edit>
+        <reference name="content">
+            <block type="learning_editeurs/adminhtml_editeur_edit" name="learning_editeurs_adminhtml_editeur_edit"></block>
+        </reference>
+        <reference name="left">
+            <block type="learning_editeurs/adminhtml_editeur_edit_tabs" name="learning_editeurs_adminhtml_editeur_edit_tabs">
+                <block type="learning_editeurs/adminhtml_editeur_edit_tab_form" name="learning_editeurs_adminhtml_editeur_edit_tab_form" />
+                <action method="addTab">
+                    <name>main_section</name>
+                    <block>learning_editeurs_adminhtml_editeur_edit_tab_form</block>
+                </action>
+            </block>
+        </reference>
+    </adminhtml_editeurs_editeur_edit>
+
+</layout>
